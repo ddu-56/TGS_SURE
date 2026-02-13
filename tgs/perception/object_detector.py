@@ -164,7 +164,7 @@ class ObjectDetector:
                 conf = float(boxes.conf[i].item())
                 x1, y1, x2, y2 = boxes.xyxy[i].int().tolist()
                 cx = (x1 + x2) // 2
-                cy = (y1 + y2) // 2
+                cy = y2  # bottom-center: where object contacts the table
                 class_name = self._config.target_class_ids.get(cls_id, f"class_{cls_id}")
                 detections.append(
                     Detection(
