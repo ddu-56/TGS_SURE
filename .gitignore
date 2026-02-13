@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+.venv/
+venv/
+env/
+.env
+*.pt
+*.onnx
+calibration.json
+.pytest_cache/
+.mypy_cache/
+*.DS_Store
